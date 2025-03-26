@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Gujarati OLAC Entry</title>
+  <link rel="stylesheet" type="text/css" href="StyleLanguage.css">
+
+</head>
+<body>
+<!-- header with logo and search bar -->
+<header>
+  <img src="olac%20logo.png" alt="OLAC Logo" />
+  <span>OLAC: Open Language Archives Community</span>
+  <div class="search-bar">
+    <label>
+      <input type="text" placeholder="Search" />
+    </label>
+  </div>
+</header>
+<!-- main navigation bar -->
+<nav class="navbar">
+  <a href="index.html">Home</a>
+  <a href="Documents.html">Documents</a>
+  <a href="About.html">About</a>
+  <a href="Archives.html">Archives</a>
+  <a href="News.html">News</a>
+  <a href="Organization.html">Organization</a>
+  <a href="Tools.html">Tools</a>
+  <a href="Service.html">Service</a>
+  <a href="Language%20Entry.html" class="active">Language Entry</a>
+</nav>
+
+<!-- main container for language entry content -->
+<div class="container">
+<!-- gallery of images related to gujarati language -->
+  <div class="image-gallery">
+    <img src="gujarati map.png" alt="Gujarati Map">
+    <img src="Gujarati.jpeg" alt="Gujarati Script Chart">
+    <img src="gujarati4.jpeg" alt="Garba Dance">
+    <img src="GujaratiScriptsDIP.png" alt="Gujarati Writing Styles">
+  </div>
+
+  <h2>Metadata</h2>
+  <table>
+    <tr><th>Title:</th><td>Hindī-Gujarātī dhātukośa...</td></tr>
+    <tr><th>Creator:</th><td>Caudharī, Raghuvīra, 1938-</td></tr>
+    <tr><th>Date:</th><td>1982</td></tr>
+    <tr><th>Description:</th><td>A comparative study of Hindi-Gujarati verbal roots</td></tr>
+    <tr><th>Extent:</th><td>230 p. ; 25 cm</td></tr>
+    <tr><th>Is Part Of:</th><td>L.D. series ; 87</td></tr>
+    <tr><th>Language:</th><td>Gujarati<br>Hindi</td></tr>
+    <tr><th>Language (ISO639):</th><td><a href="http://www.language-archives.org/language/guj">guj</a><br><a href="http://www.language-archives.org/language/hin">hin</a></td></tr>
+    <tr><th>Publisher:</th><td>Ahamadābāda : Lālabhāī Dalapatabhāī...</td></tr>
+    <tr><th>Subject:</th><td>PK1934.C35 1982<br>Hindi language<br>Gujarati language</td></tr>
+  </table>
+
+  <h2>Olac Info</h2>
+  <table>
+    <tr><th>Archive:</th><td>Graduate Institute of Applied Linguistics Library</td></tr>
+    <tr><th>Description:</th><td><a href="http://www.language-archives.org/archive/gial.edu">link</a></td></tr>
+  </table>
+
+  <h2>OAI Info</h2>
+  <table>
+    <tr><th>OaiIdentifier:</th><td><a href="http://www.language-archives.org/item/oai:gial.edu:3865">oai:gial.edu:3865</a></td></tr>
+    <tr><th>DateStamp:</th><td>2009-05-27</td></tr>
+  </table>
+
+  <h2>Search Info</h2>
+  <table>
+    <tr><th>Citation:</th><td>Caudharī, Raghuvīra, 1938-. 1982.</td></tr>
+    <tr><th>Terms:</th><td>area_Asia country_IN dcmi_Text iso639_guj iso639_hin</td></tr>
+  </table>
+
+  <h2>Inferred Metadata</h2>
+  <table>
+    <tr><th>Country:</th><td><a href="http://www.language-archives.org/search?q=dcmi_Text&a=---+all+archives+">India</a></td></tr>
+    <tr><th>Area:</th><td><a href="http://www.language-archives.org/search?q=dcmi_Text&a=---+all+archives+">Asia</a></td></tr>
+  </table>
+</div>
+
+<!-- footer with quick links -->
+<div class="footer-links">
+  <a href="#">Overview</a> | <a href="#">FAQ</a> | <a href="#">Implementers' FAQ</a>
+</div>
+<!-- script for navbar behavior on scroll source: Sticky navbar W3schools  -->
+<script>
+  window.addEventListener('scroll', () => {
+    const navbar = document.querySelector('.navbar');
+    navbar.style.position = window.scrollY > 80 ? 'fixed' : 'static';
+    navbar.style.top = window.scrollY > 80 ? '0' : '';
+    navbar.style.width = '100%';
+    navbar.style.zIndex = '999';
+  });
+</script>
+</body>
+</html>

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OLAC - Open Language Archives Community</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f7fb;
+      color: #333;
+    }
+    header {
+      background-color: #ffffff;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 15px 30px;
+      border-bottom: 4px solid #003366;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    header img {
+      height: 60px;
+    }
+    header span {
+      font-size: 1.5em;
+      font-weight: bold;
+      color: #003366;
+    }
+    .search-bar {
+      border: 1px solid #ccc;
+      border-radius: 25px;
+      padding: 6px 15px;
+      background: #f1f1f1;
+    }
+    .search-bar input {
+      border: none;
+      outline: none;
+      background: transparent;
+      padding: 6px;
+      font-size: 1em;
+    }
+    .navbar {
+      background: #003366;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 10px 0;
+    }
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      padding: 10px 20px;
+      font-weight: 500;
+    }
+    .navbar a.active, .navbar a:hover {
+      background: #fdd835;
+      color: #003366;
+      border-radius: 5px;
+    }
+    .container {
+      width: 95%;
+      max-width: 1600px;
+      margin: auto;
+      padding: 30px 0;
+    }
+    .content {
+      display: flex;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+    .content img {
+      max-width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    .highlight {
+      background: #e3f2fd;
+      padding: 20px;
+      border-left: 6px solid #003366;
+      border-radius: 6px;
+    }
+    .section-title {
+      font-size: 1.8em;
+      margin-bottom: 10px;
+      color: #003366;
+    }
+    .resources {
+      text-align: center;
+      background: url('improve-language-skills.jpg') no-repeat center;
+      background-size: cover;
+      color: white;
+      padding: 60px 20px;
+    }
+    .resources input[type="text"] {
+      margin-top: 15px;
+      padding: 10px;
+      border: none;
+      border-radius: 25px;
+      width: 300px;
+      max-width: 80%;
+      font-size: 1em;
+    }
+    .footer-links {
+      background: #003366;
+      color: white;
+      text-align: center;
+      padding: 20px 10px;
+      font-size: 0.95em;
+    }
+    .footer-links a {
+      color: white;
+      text-decoration: none;
+      margin: 0 12px;
+    }
+    .grid-two {
+      display: flex;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+    .grid-two > div {
+      flex: 1;
+      min-width: 300px;
+    }
+    @media (max-width: 768px) {
+      .content, .grid-two {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+<header>
+  <img src="olac%20logo.png" alt="OLAC Logo" />
+  <span>OLAC: Open Language Archives Community</span>
+  <div class="search-bar">
+    <input type="text" placeholder="Search" />
+  </div>
+</header>
+<nav class="navbar">
+  <a href="#" class="active">Home</a>
+  <a href="#">Documents</a>
+  <a href="#">About</a>
+  <a href="#">Archives</a>
+  <a href="#">News</a>
+  <a href="#">Organization</a>
+  <a href="#">Tools</a>
+  <a href="#">Service</a>
+</nav>
+<div class="container">
+  <div class="grid-two">
+    <div>
+      <h2 class="section-title">OLAC Mission</h2>
+      <p>OLAC, the Open Language Archives Community, is an international partnership of institutions and individuals who are creating a worldwide virtual library of language resources by: (i) developing consensus on best current practices for digital archiving of language resources, and (ii) building a network of interoperable repositories and services for housing and accessing such resources.</p>
+    </div>
+    <div><img src="earth-transparent.png" alt="Earth View" /></div>
+  </div>
+  <div class="grid-two" style="margin-top: 40px;">
+    <div class="highlight">
+      <h2>News</h2>
+      <p><strong>OLAC Joins the Linguistic Linked Open Data Cloud:</strong> The OLAC system has now been integrated with LLOD. <a href="http://www.language-archives.org/news.html#llod">Read more</a></p>
+      <p><strong>New Page on Archive Submission Policies:</strong> A service to linguists seeking an archive for deposit. <a href="http://www.language-archives.org">Read more</a></p>
+      <p><strong>New OLAC Search Service:</strong> To mark our 10th anniversary, OLAC announces a new search platform. <a href="http://www.language-archives.org">Read more</a></p>
+    </div>
+    <div class="highlight">
+      <h2>Documents</h2>
+      <p><a href="http://www.language-archives.org/documents.html#Standards">OLAC Standards</a> – Details on how OLAC operates.</p>
+      <p><a href="http://www.language-archives.org/documents.html#Recommendations">Recommendations</a> – Community consensus on archiving practices.</p>
+      <p><a href="http://www.language-archives.org/documents.html#Recommendations">Notes</a> – Background information for implementers.</p>
+    </div>
+  </div>
+</div>
+<section class="resources" style="max-width: 1000px; margin: 0 auto; padding: 60px 20px; text-align: center; background: url('improve-language-skills.jpg') no-repeat center; background-size: cover; color: white;">
+  <h2>Find Language Resources</h2>
+  <p>Use OLAC's search engine: <a href="http://search.language-archives.org/" style="color: yellow;">search.language-archives.org</a></p>
+  <input type="text" placeholder="Search resources..." />
+</section>
+<div class="container">
+  <div class="grid-two">
+    <div class="highlight">
+      <h2>OLAC Coverage</h2>
+      <p>OLAC Archives hold over 300,000 records, representing half of the world's living languages. <a href="http://www.language-archives.org/documents/coverage.html">View coverage stats</a></p>
+    </div>
+    <div class="highlight">
+      <h2>Join the OLAC Community</h2>
+      <p>Join our <a href="https://groups.google.com/g/olac">mailing list</a> to stay informed on standards and best practices.</p>
+      <p>Visit our <a href="https://listserv.linguistlist.org/pipermail/olac-general/">mailing list archive</a> or <a href="mailto:contact@language-archives.org">contact us</a>.</p>
+    </div>
+  </div>
+</div>
+<div class="footer-links">
+  <a href="#">Overview</a> | <a href="#">FAQ</a> | <a href="#">Implementers' FAQ</a>
+</div>
+</body>
+</html>

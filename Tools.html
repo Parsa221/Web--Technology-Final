@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OLAC - Tools</title>
+  <link rel="stylesheet" type="text/css" href="StyleTools.css">
+
+</head>
+<body>
+<!-- header with logo and search bar -->
+<header>
+  <img src="olac%20logo.png" alt="OLAC Logo" />
+  <span>OLAC: Open Language Archives Community</span>
+  <div class="search-bar">
+    <label>
+      <input type="text" placeholder="Search" />
+    </label>
+  </div>
+</header>
+<!-- navigation bar -->
+<nav class="navbar">
+  <a href="index.html">Home</a>
+  <a href="Documents.html">Documents</a>
+  <a href="About.html">About</a>
+  <a href="Archives.html">Archives</a>
+  <a href="News.html">News</a>
+  <a href="Organization.html">Organization</a>
+  <a href="Tools.html" class="active">Tools</a>
+  <a href="Service.html">Service</a>
+  <a href="Language%20Entry.html">Language Entry</a>
+</nav>
+<!-- main content container -->
+<div class="container">
+  <!-- content sections stay unchanged -->
+  <!-- ... (same HTML content from original file) ... -->
+<!-- section with search, lookup and external resources -->
+  <div class="section">
+    <p><i>This page lists tools for implementers of OLAC repositories.</i></p>
+    <h2>Get all OLAC Metadata</h2>
+    <ul>
+      <li><a href="http://www.language-archives.org/xmldump/ListRecords.xml.gz">OLAC records in XML (gzipped)</a></li>
+      <li><a href="http://www.language-archives.org/static/olac-datahub.rdf.gz">OLAC records in RDF/XML (gzipped)</a></li>
+      <li><a href="http://www.language-archives.org/cgi-bin/olaca3.pl">OAI data provider for OLAC records</a></li>
+    </ul>
+    <h2>Data Providers</h2>
+    <ul>
+      <li><a href="http://www.language-archives.org/tools/faq.html">OLAC Implementers' FAQ</a></li>
+      <li><a href="http://www.language-archives.org/register/register.php">Validate/Register a Provider</a></li>
+      <li><a href="http://re.cs.uct.ac.za/cgi-bin/Explorer/2.0-1.46/testoai">OAI Repository Explorer: Interact</a></li>
+      <li><a href="http://re.cs.uct.ac.za/cgi-bin/Explorer/2.0-1.46/addarchive">Test Repository Conformance</a></li>
+      <li><a href="http://www.language-archives.org/tools/survey.php">Metadata Usage Survey</a></li>
+      <li><a href="http://www.language-archives.org/sr">Static Repository Gateway</a></li>
+      <li><a href="https://sourceforge.net/project/showfiles.php?group_id=6577&package_id=200507&release_id=439285">Convert BibTeX to OLAC</a></li>
+      <li><a href="http://www.openarchives.org/pmh/tools/tools.php">OAI Tools</a></li>
+      <li><a href="https://code.google.com/p/olac/source/browse/#svn/src/data_providers/ailla_php">Sample Provider (PHP)</a></li>
+    </ul>
+    <h2>OLAC Metadata Schema</h2>
+    <ul>
+      <li><a href="http://www.language-archives.org/OLAC/1.1/olac.xsd">olac.xsd</a></li>
+      <li><a href="http://www.language-archives.org/OLAC/1.1/olac.xml">olac.xml</a></li>
+      <li><a href="http://www.language-archives.org/OLAC/1.1/olac.dtd">olac.dtd</a></li>
+      <li><a href="http://www.language-archives.org/tools/metadata/freestanding.html">Free-standing Metadata Validator</a></li>
+      <li><a href="http://www.language-archives.org/OLAC/metadata.html">OLAC Metadata Format</a></li>
+      <li><a href="http://www.language-archives.org/REC/olac-extensions.html">Metadata Extensions</a></li>
+      <li><a href="http://listserv.linguistlist.org/archives/metadata.html">METADATA List</a></li>
+    </ul>
+    <p>See also: <a href="https://github.com/olac/olac/blob/master/system/olacdb/olac_schema.sql">OLAC Database Schema</a>.</p>
+  </div>
+<!-- section with search, lookup and external resources -->
+  <div class="section">
+    <h2>Simple search for OLAC records</h2>
+    <form action="http://www.language-archives.org/tools/search/search.php" method="get">
+      <label>
+        <input type="text" size="16" maxlength="24" name="query">
+      </label>
+      <input type="submit">
+    </form>
+    <h2>Look up an OLAC item</h2>
+    <form name="lookupform" action="javascript:window.location.href='/item/'+document.lookupform.identifier.value;">
+      <label>
+        <input type="text" size="16" maxlength="80" name="identifier">
+      </label>
+      <input type="submit">
+    </form>
+    <h2>List records from an OLAC archive</h2>
+    <form action="http://www.language-archives.org/archive_records" method="get">
+      <label>
+        <input type="text" size="16" maxlength="80" name="archive">
+      </label>
+      <input type="submit">
+    </form>
+    <h2>OLAC-Implementers Mailing List</h2>
+    <p>Join the discussion on the <a href="http://lists.linguistlist.org/archives/olac-implementers.html">OLAC-Implementers list</a>.</p>
+    <h2>OAI and DCMI Documents</h2>
+    <ul>
+      <li><a href="http://library.cern.ch/HEPLW/4/papers/3/">OAI Metadata Harvesting Tutorial</a></li>
+      <li><a href="http://www.openarchives.org/OAI/openarchivesprotocol.html">OAI Metadata Protocol</a></li>
+      <li><a href="http://www.openarchives.org/documents/oai.pdf">OAI Framework Paper</a></li>
+      <li><a href="http://dublincore.org/documents/dces/">Dublin Core Elements</a></li>
+      <li><a href="http://www.openarchives.org/documents/index.html">More OAI Docs</a></li>
+    </ul>
+    <h2>Useful Resources</h2>
+    <ul>
+      <li>Language Codes: <a href="http://www.ethnologue.com/codes/">Ethnologue</a> | <a href="http://www.sil.org/iso639-3/download.asp">ISO 639-3</a></li>
+      <li>OAI: <a href="http://www.openarchives.org/OAI/openarchivesprotocol.htm">Protocol</a> | <a href="http://library.cern.ch/HEPLW/4/papers/3/">Tutorial</a> | <a href="http://www.openarchives.org/documents/FAQ.html">FAQ</a> | <a href="http://www.openarchives.org/tools/">Tools</a> | <a href="http://www.openarchives.org/data/registerasprovider.html">Registration</a></li>
+      <li><a href="http://dublincore.org/documents/dces/">Dublin Core Element Set</a></li>
+      <li>Repository Explorer: <a href="http://re.cs.uct.ac.za/">1.0/1.1/2.0</a></li>
+      <li>XML Schema: <a href="http://www.w3.org/XML/Schema">W3C</a> | <a href="http://www.w3.org/TR/xmlschema-0/">Primer</a> | <a href="http://www.xml.com/pub/a/2000/11/29/schemas/part1.html">XML.com</a> | <a href="http://www.oasis-open.org/cover/schemas.html">OASIS</a> | <a href="http://www.w3.org/2001/03/webdata/xsv">XSV Validator</a> | <a href="http://www.ltg.ed.ac.uk/~ht/xsv-status.html">XSV Status</a> | <a href="http://www.language-archives.org/tools/xsv/">Xerces-J Validator</a></li>
+    </ul>
+  </div>
+</div>
+<!-- footer navigation links -->
+<div class="footer-links">
+  <a href="#">Overview</a> | <a href="#">FAQ</a> | <a href="#">Implementers' FAQ</a>
+</div>
+<!-- script for navbar behavior on scroll source: Sticky navbar W3schools  -->>
+<script>
+  window.addEventListener('scroll', () => {
+    const navbar = document.querySelector('.navbar');
+    navbar.style.position = window.scrollY > 80 ? 'fixed' : 'static';
+    navbar.style.top = window.scrollY > 80 ? '0' : '';
+    navbar.style.width = '100%';
+    navbar.style.zIndex = '999';
+  });
+</script>
+</body>
+</html>

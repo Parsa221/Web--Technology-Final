@@ -1,0 +1,162 @@
+
+    /* ==== General Body Styling ==== */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f7fb; /* Softer background for contrast */
+    color: #333;
+    line-height: 1.6;
+}
+
+/* ==== Header Section ==== */
+header {
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 30px;
+    border-bottom: 4px solid #003366;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1); /* Softer shadow for depth */
+}
+header img {
+    height: 60px;
+}
+header span {
+    font-size: 1.6em;
+    font-weight: bold;
+    color: #003366;
+}
+
+/* ==== Search Bar ==== */
+.search-bar {
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    padding: 6px 15px;
+    background: #f1f1f1;
+}
+.search-bar input {
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 6px;
+    font-size: 1em;
+}
+
+/* ==== Navigation Bar ==== */
+.navbar {
+    background: #003366;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 12px 0;
+}
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 22px;
+    font-weight: 500;
+    transition: background 0.3s ease;
+}
+.navbar a.active, .navbar a:hover {
+    background: #fdd835;
+    color: #003366;
+    border-radius: 5px;
+}
+
+/* ==== Page Container ==== */
+.container {
+    width: 95%;
+    max-width: 1600px;
+    margin: auto;
+}
+
+/* ==== Headings ==== */
+h1 {
+    color: #003366;
+    font-size: 1.8em;
+    margin-top: 20px;
+    border-bottom: 2px solid #003366;
+    padding-bottom: 5px;
+}
+h2 {
+    width: 95%;
+    max-width: 1600px;
+    margin: auto;
+    padding: 40px 0;
+}
+
+/* ==== Table Styling ==== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 1px 6px rgba(0,0,0,0.1);
+}
+table th, table td {
+    text-align: left;
+    padding: 16px;
+    border-bottom: 1px solid #eee;
+}
+table caption {
+    caption-side: bottom;
+    padding: 10px;
+    font-size: 0.95em;
+    color: #555;
+}
+
+/* ==== List Styling ==== */
+ul {
+    margin-top: 10px;
+    padding-left: 20px;
+}
+ul li {
+    margin-bottom: 12px;
+}
+ul ul {
+    margin-top: 5px;
+    padding-left: 20px;
+    font-size: 0.95em;
+    color: #555;
+}
+
+
+.grid-two > div {
+    flex: 1;
+    min-width: 300px;
+}
+
+/* ==== Buttons ==== */
+button {
+    margin-top: 10px;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 5px;
+    background-color: #003366;
+    color: white;
+    font-size: 0.95em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+button:hover {
+    background-color: #002244;
+}
+
+/* ==== Link Styling ==== */
+a {
+    color: #003366;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+/* ==== Horizontal Rule ==== */
+hr {
+    margin: 40px 0;
+    border: none;
+    border-top: 1px solid #ccc;
+}

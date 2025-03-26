@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>News Zigzag Layout</title>
+  <link rel="stylesheet" type="text/css" href="StyleNews.css"/>
+</head>
+<body>
+<!-- header with logo and search bar -->
+<header>
+  <img src="olac logo.png" alt="OLAC Logo" />
+  <span>OLAC: Open Language Archives Community</span>
+  <div class="search-bar">
+    <label>
+      <input type="text" placeholder="Search" />
+    </label>
+  </div>
+</header>
+<!-- main navigation bar -->
+<nav class="navbar">
+  <a href="index.html">Home</a>
+  <a href="Documents.html">Documents</a>
+  <a href="About.html">About</a>
+  <a href="Archives.html">Archives</a>
+  <a href="News.html" class="active">News</a>
+  <a href="Organization.html">Organization</a>
+  <a href="Tools.html">Tools</a>
+  <a href="Service.html">Service</a>
+  <a href="Language%20Entry.html">Language Entry</a>
+</nav>
+
+<!-- section containing zigzag news boxes -->
+<div class="news-section">
+<!-- regular news box -->
+  <div class="news-box">
+    <div class="text-content">
+      <h2>Linguistic Linked Open Data: [Aug 2016]</h2>
+      <p>The OLAC system has now been integrated with the Linguistic Linked Open Data Cloud.</p>
+      <a href="http://linguistic-lod.org/">http://linguistic-lod.org/</a>
+    </div>
+    <div class="news-image">
+      <img src="download.png" alt="language entry"/>
+    </div>
+  </div>
+
+<!-- alternating news box aligned left -->
+  <div class="news-box left">
+    <div class="text-content">
+      <h2>Archive submission policies: [Nov 2015]</h2>
+      <p>This page lists all OLAC participants who have published their submission policy as part of their OLAC repository, serving linguists seeking an archive to deposit language resources.</p>
+      <a href="http://www.language-archives.org/submission-policies.html">Submission Policies</a>
+    </div>
+    <div class="news-image">
+      <img src="download.png" alt="language entry"/>
+    </div>
+  </div>
+
+<!-- regular news box -->
+  <div class="news-box">
+    <div class="text-content">
+      <h2>New OLAC Search Service: [Dec 2010]</h2>
+      <p>To mark our 10th anniversary, OLAC announces a new search service.
+        Sponsored by the National Science Foundation, and hosted by the University of Pennsylvania
+        Libraries</p>
+      <a href="http://search.language-archives.org/">Search Service</a>
+    </div>
+    <div class="news-image">
+      <img src="download.png" alt="language entry"/>
+    </div>
+  </div>
+
+<!-- alternating news box aligned left -->
+  <div class="news-box left">
+    <div class="text-content">
+      <h2>Language Archives Tutorial at LSA (USA): [Jan 2009]</h2>
+      <p>In January 2009, an OLAC-endorsed language archives tutorial was held at the Linguistic Society of America's winter meeting.</p>
+      <a href="http://www.ailla.utexas.org/site/lsa_olac09.html">Accessing Collaboration</a>
+    </div>
+    <div class="news-image">
+      <img src="download.png" alt="language entry"/>
+    </div>
+  </div>
+
+<!-- regular news box -->
+  <div class="news-box">
+    <div class="text-content">
+      <h2>OLAC Presented at three Pacific Conferences: [Sep 2008]</h2>
+      <p>OLAC is being presented at conferences in Australia, the Philippines, and Hawaii...</p>
+      <a href="http://www.language-archives.org/documents/iasa.pdf">Pacific Presentation</a>
+    </div>
+    <div class="news-image">
+      <img src="download.png" alt="language entry"/>
+    </div>
+  </div>
+</div>
+
+<!-- footer section with additional news -->
+<div class="footer-boxes">
+<!-- individual footer box -->
+  <div class="footer-box">
+    <h2>OLAC Presents at DRIVER Summit: [Jan 2008]</h2>
+    <p>In January 2008, the DRIVER project (Digital Repository Infrastructure Vision for European Research) convened a
+      Summit to present results of its initial test-bed phase and to pave the way for establishing an operational confederation of digital
+      repositories. DRIVER responds to the vision that all relevant scientific content should be easily accessible through internet-based infrastructures.
+      Like OLAC, DRIVER builds on the OAI (Open Archives Initiative) infrastructure.
+      OLAC was invited to present its work on developing a "thematic" federation of repositories focused on language resources</p>
+    <a href="http://www.driver-support.eu/multi/driversummit.php">Summit Proceedings</a>
+  </div>
+<!-- individual footer box -->
+  <div class="footer-box">
+    <h2>Other News</h2>
+    <ul>
+      <li><a href="http://www.language-archives.org/news/archive.html">OLAC News Archive</a></li>
+      <li><a href="http://www.openarchives.org/news/index.html">News from Open Archives Initiative</a></li>
+    </ul>
+  </div>
+</div>
+<!-- script for navbar behavior on scroll source: Sticky navbar W3schools  -->
+<script>
+  window.addEventListener('scroll', () => {
+    const navbar = document.querySelector('.navbar');
+    navbar.style.position = window.scrollY > 80 ? 'fixed' : 'static';
+    navbar.style.top = window.scrollY > 80 ? '0' : '';
+    navbar.style.width = '100%';
+    navbar.style.zIndex = '999';
+  });
+</script>
+
+</body>
+</html>

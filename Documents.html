@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>OLAC Documents</title>
+    <link rel="stylesheet" type="text/css" href="StyleDocuments.css" />
+</head>
+<body>
+<header>
+<img alt="OLAC Logo" src="olac%20logo.png"/>
+<span>OLAC: Open Language Archives Community</span>
+<div class="search-bar">
+    <label>
+        <input placeholder="Search" type="text"/>
+    </label>
+</div>
+</header>
+<!-- navigation menu -->
+<nav class="navbar">
+    <a href="index.html">Home</a>
+    <a href="Documents.html" class="active">Documents</a>
+    <a href="About.html">About</a>
+    <a href="Archives.html">Archives</a>
+    <a href="News.html">News</a>
+    <a href="Organization.html">Organization</a>
+    <a href="Tools.html">Tools</a>
+    <a href="Service.html">Service</a>
+    <a href="Language%20Entry.html">Language Entry</a>
+</nav>
+<div class="container">
+<h1>OLAC Documents</h1>
+<p>This index lists all documents that are current within the OLAC document process.
+  They are listed by type. See also 
+  <a href="http://www.language-archives.org/documents_by_status.html">OLAC documents by status</a> and 
+  <a href="http://www.language-archives.org/documents_by_date.html">OLAC documents by date</a>, 
+  which include documents that have been retired or withdrawn.</p>
+<!-- table listing document types -->
+<table>
+<caption>See the <a href="http://www.language-archives.org/OLAC/process.html">OLAC Process</a> document for an explanation of the document types, status levels, and review process.</caption>
+<tr>
+<th>Standards</th>
+<td>OLAC Standards specify how the Open Language Archives Community operates.</td>
+</tr>
+<tr>
+<th>Recommendations</th>
+<td>OLAC Recommendations express the consensus of members regarding language resource archiving.</td>
+</tr>
+<tr>
+<th>Notes</th>
+<td>OLAC Notes offer background information and help for implementers of language archives.</td>
+</tr>
+</table>
+<!-- horizontal divider -->
+<hr/>
+<div class="container"><div style="display: flex; flex-wrap: wrap; gap: 40px;"><div style="flex: 1; min-width: 300px;"><h1>Standards</h1><ul>
+<li><a href="http://www.language-archives.org/OLAC/metadata.html">OLAC Metadata</a> [2008-05-31]
+      <ul><li>Defines the format for OLAC metadata based on Dublin Core, with support for extensions.</li></ul>
+</li>
+<li><a href="http://www.language-archives.org/OLAC/process.html">OLAC Process</a> [2006-04-05]
+      <ul><li>Summarizes OLAC’s purpose, structure, and operational guidelines.</li></ul>
+</li>
+<li><a href="http://www.language-archives.org/OLAC/repositories.html">OLAC Repositories</a> [2006-04-05]
+      <ul><li>Defines repository implementation standards for OLAC archives.</li></ul>
+</li>
+</ul>
+<h1>Recommendations</h1>
+<!-- list that will be limited by show more script -->
+<ul class="limit-list">
+<li><a href="http://www.language-archives.org/REC/bpr.html">Best Practice Recommendations for Language Resource Description</a> [2008-07-11]
+      <ul><li>Guidance on best practices for using OLAC metadata.</li></ul>
+</li>
+<li><a href="http://www.language-archives.org/REC/discourse.html">OLAC Discourse Type Vocabulary</a> [2012-02-04]
+      <ul><li>Controlled vocabulary for describing discourse structure in resources.</li></ul>
+</li>
+<li><a href="http://www.language-archives.org/REC/language.html">OLAC Language Extension</a> [2008-02-22]
+      <ul><li>Extension using ISO 639-3 for identifying languages in metadata.</li></ul>
+</li>
+<li><a href="http://www.language-archives.org/REC/type.html">OLAC Linguistic Data Type Vocabulary</a> [2006-04-06]
+      <ul><li>Defines codes for structural linguistic content types.</li></ul>
+</li>
+<li><a href="http://www.language-archives.org/REC/field.html">OLAC Linguistic Subject Vocabulary</a> [2006-04-06]
+      <ul><li>Vocabulary for linguistic subfields and structural levels in metadata.</li></ul>
+</li>
+<li><a href="http://www.language-archives.org/REC/role.html">OLAC Role Vocabulary</a> [2006-04-06]
+      <ul><li>Controlled vocabulary for specifying contributor roles.</li></ul>
+</li>
+<li><a href="http://www.language-archives.org/REC/olac-extensions.html">Recommended metadata extensions</a> [2008-02-22]
+      <ul><li>List of OLAC-endorsed metadata extensions for language resources.</li></ul>
+</li>
+</ul>
+</div><div style="flex: 1; min-width: 300px;"><h1>Notes</h1><ul class="limit-list">
+<li><a href="http://www.language-archives.org/NOTE/query.html">A query facility for selective harvesting of OLAC metadata</a> [2003-07-29]</li>
+<li><a href="http://www.language-archives.org/NOTE/toolbox.html">Creating OLAC Records and Repositories in Toolbox</a> [2006-09-28]</li>
+<li><a href="http://www.language-archives.org/NOTE/metrics.html">OLAC Metadata Metrics</a> [2009-06-29]</li>
+<li><a href="http://www.language-archives.org/NOTE/usage.html">OLAC Metadata Usage Guidelines</a> [2008-07-11]</li>
+<li><a href="http://www.language-archives.org/NOTE/olac_display.html">Specifications for OLAC metadata display &amp; crosswalk</a> [2009-07-23]</li>
+<li><a href="http://www.language-archives.org/NOTE/third-party-extensions.html">Third Party Extensions</a> [2002-12-04]</li>
+<li><a href="http://www.language-archives.org/NOTE/viser.html">Viser: A virtual service provider</a> [2003-07-29]</li>
+</ul></div></div></div>
+    <!-- Show more code Resource: W3Schools -->
+</div><script>
+    document.addEventListener("DOMContentLoaded", function () {
+  const sections = document.querySelectorAll(".limit-list");
+
+  sections.forEach(section => {
+    const listItems = section.querySelectorAll("li");
+    if (listItems.length > 3) {
+      for (let i = 3; i < listItems.length; i++) {
+        listItems[i].style.display = "none";
+      }
+
+      const button = document.createElement("button");
+      button.textContent = "Show More";
+      button.style.marginTop = "10px";
+      button.style.padding = "6px 12px";
+      button.style.border = "none";
+      button.style.borderRadius = "5px";
+      button.style.backgroundColor = "#003366";
+      button.style.color = "white";
+      button.style.cursor = "pointer";
+
+      let expanded = false;
+      button.addEventListener("click", () => {
+        expanded = !expanded;
+        for (let i = 3; i < listItems.length; i++) {
+          listItems[i].style.display = expanded ? "list-item" : "none";
+        }
+        button.textContent = expanded ? "Show Less" : "Show More";
+      });
+
+      section.appendChild(button);
+    }
+  });
+});
+    <!-- sticky navbar from W3Schools -->
+    window.addEventListener('scroll', () => {
+    const navbar = document.querySelector('.navbar');
+    navbar.style.position = window.scrollY > 80 ? 'fixed' : 'static';
+    navbar.style.top = window.scrollY > 80 ? '0' : '';
+    navbar.style.width = '100%';
+    navbar.style.zIndex = '999';
+});
+</script></body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OLAC - Services</title>
+  <link rel="stylesheet" type="text/css" href="StyleService.css">
+</head>
+<body>
+<!-- header with logo and search bar -->
+<header>
+  <img src="olac%20logo.png" alt="OLAC Logo" />
+  <span>OLAC: Open Language Archives Community</span>
+  <div class="search-bar">
+    <label>
+      <input type="text" placeholder="Search" />
+    </label>
+  </div>
+</header>
+<!-- main navigation bar -->
+<nav class="navbar">
+  <a href="index.html">Home</a>
+  <a href="Documents.html">Documents</a>
+  <a href="About.html">About</a>
+  <a href="Archives.html">Archives</a>
+  <a href="News.html">News</a>
+  <a href="Organization.html">Organization</a>
+  <a href="Tools.html">Tools</a>
+  <a href="Service.html" class="active">Service</a>
+  <a href="Language%20Entry.html">Language Entry</a>
+</nav>
+<!-- container for service content -->
+<div class="container">
+  <h2>OLAC Infrastructure Services</h2>
+  <p>The following services support the operation of OLAC.</p>
+<!-- table listing service descriptions and links -->
+  <table>
+    <tr>
+      <td><a href="http://www.language-archives.org/register/register.php">Archive Registration</a></td>
+      <td>A service for validating and registering OLAC archives.</td>
+    </tr>
+    <tr>
+      <td><a href="http://www.language-archives.org/tools/metadata/freestanding.html">Freestanding Metadata</a></td>
+      <td>A service for validating and formatting an OLAC metadata record.</td>
+    </tr>
+    <tr>
+      <td><a href="http://www.language-archives.org/cgi-bin/olaca3.pl?verb=Document">OLAC Aggregator</a></td>
+      <td>A service that provides a repository containing the records from all other registered OLAC repositories, incorporating an OLAC-DC crosswalk and a query function.</td>
+    </tr>
+    <tr>
+      <td><a href="http://www.language-archives.org/viser">Viser</a></td>
+      <td>A virtual service which allows language resource sites to post services based on OLAC metadata without having to harvest metadata or develop a user interface.</td>
+    </tr>
+  </table>
+
+<!-- horizontal rule separating sections -->
+  <hr />
+
+  <h2>OLAC Utility Services</h2>
+  <p>The following services support the developers of OLAC archives, and are provided on the <a href="http://www.language-archives.org/tools.html">OLAC Tools</a> page.</p>
+  <ul>
+    <li>Plain text search on all harvested metadata.</li>
+    <li>Resolve an identifier to a record.</li>
+    <li>Survey of metadata element usage.</li>
+  </ul>
+</div>
+<!-- footer links -->
+<div class="footer-links">
+  <a href="#">Overview</a> | <a href="#">FAQ</a> | <a href="#">Implementers' FAQ</a>
+</div>
+<!-- script for navbar behavior on scroll source: Sticky navbar W3schools  -->
+<script>
+  window.addEventListener('scroll', () => {
+    const navbar = document.querySelector('.navbar');
+    navbar.style.position = window.scrollY > 80 ? 'fixed' : 'static';
+    navbar.style.top = window.scrollY > 80 ? '0' : '';
+    navbar.style.width = '100%';
+    navbar.style.zIndex = '999';
+  });
+</script>
+</body>
+</html>

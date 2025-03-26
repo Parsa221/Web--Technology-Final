@@ -1,0 +1,106 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f7fb;
+    color: #333;
+}
+header {
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 30px;
+    border-bottom: 4px solid #003366;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+header img {
+    height: 60px;
+}
+header span {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #003366;
+}
+.search-bar {
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    padding: 6px 15px;
+    background: #f1f1f1;
+}
+.search-bar input {
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 6px;
+    font-size: 1em;
+}
+.navbar {
+    background: #003366;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-weight: 500;
+}
+.navbar a.active, .navbar a:hover {
+    background: #fdd835;
+    color: #003366;
+    border-radius: 5px;
+}
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px 20px;
+}
+h2 {
+    color: #003366;
+    border-left: 5px solid #fdd835;
+    padding-left: 10px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background: #fff;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+td, th {
+    padding: 15px;
+    border: 1px solid #ddd;
+    vertical-align: top;
+}
+ul {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+p {
+    margin-bottom: 10px;
+}
+hr {
+    border: none;
+    border-top: 2px dashed #ccc;
+    margin: 40px 0;
+}
+.footer-links {
+    background: #003366;
+    color: white;
+    text-align: center;
+    padding: 20px 10px;
+    font-size: 0.95em;
+}
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 12px;
+}
